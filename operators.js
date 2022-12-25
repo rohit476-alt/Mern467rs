@@ -19,7 +19,7 @@ console.log('Shift operators' + (a>>b))
 console.log('Shift operators' + (a<<b))
 
 console.log('logical And 1' + (10&&1))
-console.log('logical And 0' +(10&&0))
+console.log('logical And 0' +(10&&0)) 
 console.log('logical or 0'+(10||0))
 console.log('logical or 1'+(10||1))
 
