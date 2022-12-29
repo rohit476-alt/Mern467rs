@@ -35,4 +35,4 @@ const obj = {
     2 :  'acc',
     10 :  'xyz',
 }
-console.log('Relation object In :'+(a in obj))
+ console.log('Relation object In :'+(a in obj))
