@@ -6,7 +6,7 @@ a = 'abc'
    const name = 'abc'
    const age = 20
    const isokay = true
-   const dt = new DataTransfer()
+   const dt = newDataTransfer()
    const obj = {
     sin : 67
    }
@@ -14,7 +14,7 @@ a = 'abc'
      const speed = undefined
      const abc = NaN
      //function
-
+     
       const fn = function(){
 
       }
