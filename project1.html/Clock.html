@@ -13,16 +13,17 @@
         let a;
         let date;
         let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         setInterval(() => {
         a = new Date();
-         date = a.toLocaleDateString();
+         date = a.toLocaleDateString(undefined, options);
          time = a.getHours()  + ':' + a.getMinutes()  + ':' + a.getSeconds();
-        document.getElementById('time').innerHTML = time + " on " + date;
+        document.getElementById('time').innerHTML = time + "<br> on " + date;
     }, 1000);
     </script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
