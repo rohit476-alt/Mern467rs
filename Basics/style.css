@@ -1,0 +1,70 @@
+:root {
+    --nm : cadetblue;
+    --hv : yellowgreen;
+    --logourl : '';
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: var(--nm);
+
+}
+
+.cont-flx1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+
+    background-color: beige;
+}
+.cont-flx2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+
+    background-color: beige;
+}
+.cont-flx3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+
+    background-color: beige;
+}
+.cont-flx4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+
+    background-color: beige;
+}
+.cont-flx5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+
+    background-color: beige;
+}
+.cont-flx{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200;
+
+}
+
+
+.box:hover {
+    background-color: var(--hv);
+}
