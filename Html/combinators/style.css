@@ -1,0 +1,23 @@
+.demo2 > p{
+    color: Solid white;
+    background-color: blueviolet;
+    height: 100px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.demo1 > p{
+    color: Solid white;
+    background-color: blueviolet;
+    height: 100px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div + p{
+    color: aqua;
+}
