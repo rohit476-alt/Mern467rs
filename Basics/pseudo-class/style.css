@@ -1,0 +1,18 @@
+p:hover{
+    color: red;
+}
+P:first-child{
+    background-color:brown;
+}
+p:last-child{
+    background-color: aquamarine;
+}
+p:last-child{
+    background-color: beige;
+}
+p:visited{
+    background-color: blanchedalmond;
+}
+p:focus{
+    background-color: currentColor;
+}
