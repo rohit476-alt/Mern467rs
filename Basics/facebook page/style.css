@@ -19,20 +19,24 @@ body{
     color: #2c83f2;
 }
 header{
-    width: 320px;
+    box-shadow: 0 8px 10px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
     height: 350px;
     position: absolute;
     top: 20%;
     left: 57%;
     background-color: white;
+    border-radius: 7px;
+
 }
 
 .box input{
-    width: 75%;
-    margin: 10px;
+    width: 78%;
+    margin: 15px;
     margin-top: 18px;
     margin-left: 21px;
     padding: 13px 18px;
+    border-radius: 7px;
 }
 .link{
     width: 81%;
@@ -75,4 +79,8 @@ header{
     text-decoration: none;
     color: white;
 
+}
+.link3 p{
+    font-size: 13px;
+    text-align: center;
 }
