@@ -186,14 +186,12 @@ header .navbar ul li a:hover{
     padding: 2rem 1rem;
     padding-left: 6rem;
 }
-
 .about .row .info h3{
     font: 2ream;
     color: var(--yellow);
     padding: 1rem 0;
     font-weight: normal;
 }
-
 .about .row .info h3 span{
     color: #eee;
     padding: 0 5rem;
@@ -215,7 +213,7 @@ header .navbar ul li a:hover{
     margin: 2rem;
 }
 .about .row .counter .box span{
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--yellow);
 }
 
@@ -328,6 +326,13 @@ header .navbar ul li a:hover{
     text-transform: none;
     font-size: 1.7rem;
     width: 100%;
+    border-radius: 1rem;
+    color: var(--yellow);
+
+}
+
+.contact .row form .box:hover{
+    transform: scale(1.1);
 }
 
 .contact .row form .box::placeholder{
