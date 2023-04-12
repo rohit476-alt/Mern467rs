@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <style>
+        .box {
+            width: 20rem;
+            height: 20rem;
+            background-color: green;
+            border-radius: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10rem;
+            margin-left: 35rem;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+    </div>
+</body>
+
+<script>
+
+    const box = document.querySelector(".box");
+
+    box.addEventListener("click", () => {
+        box.style.backgroundColor = "Black"
+    })
+    
+</script>
+
+</html>

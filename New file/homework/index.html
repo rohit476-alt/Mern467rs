@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Button</title>
+
+    <Style>
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           text-decoration: none;
+           text-transform: capitalize;
+           background-color: #524971;
+        }
+
+        .container button{
+            background-color: rgb(135, 116, 105) ;
+            width: 120px;
+            height: 35px;
+            justify-content: center;
+            align-items: center;
+            border-color: darkkhaki;
+            margin: 1rem;
+            border-radius: 0.8rem;
+            margin-top: 2rem;
+            margin-left: 23px;
+
+        }
+        
+
+        .container button:hover{
+            background-color: yellowgreen;
+            transform: scale(1.2);
+        }
+
+
+    </Style>
+
+</head>
+<body>
+    <div class="container">
+        <button id="btn1">click me ! (1)</button>
+        <button id="btn2">click me ! (2)</button>
+        <button id="btn3">click me ! (3)</button>
+        <br>
+        <button id="btn4">click me ! (4)</button>
+        <button id="btn5">click me ! (5)</button>
+        <button id="btn6">click me ! (6)</button>
+        <br>
+        <button id="btn7">click me ! (7)</button>
+        <button id="btn8">click me ! (8)</button>
+        <button id="btn9">click me ! (9)</button>
+        <br>
+        <button id="res">button</button>
+    </div>  
+
+    <script>
+
+        document.getElementById("btn1").addEventListener
+        ("click",getval)
+
+        document.getElementById("btn2").addEventListener
+        ("click",getval)
+
+        document.getElementById("btn3").addEventListener
+        ("click",getval)
+
+        document.getElementById("btn4").addEventListener
+        ("click",getval)
+
+        document.getElementById("btn5").addEventListener
+        ("click",getval)
+
+        document.getElementById("btn6").addEventListener
+        ("click",getval)
+
+        document.getElementById("btn7").addEventListener
+        ("click",getval)
+
+        document.getElementById("btn8").addEventListener
+        ("click",getval)
+
+        document.getElementById("btn9").addEventListener
+        ("click",getval)
+
+        a = []
+        function getval()
+        {
+            a.push(this.innerText)
+        }
+
+        function showRes()
+        {
+            let ans = "";
+            for (val of a) 
+            {
+                ans+=val
+            }
+            alert(ans) 
+        }
+
+
+    </script>
+</body>
+</html>
