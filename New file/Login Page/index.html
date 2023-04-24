@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <main id="main-holder">
+        <h1 id="login-header">Login</h1>
+        
+        <form id="login-form">
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+          <br><br>
+          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+          <br><br>
+          <input type="submit" value="Submit" id="login-form-submit" onclick="testByRohit()">
+        </form>
+
+        <script>
+           
+
+// const obj = {
+//   email: "rohit121@gmail.com",
+//   password: "Rohit@123",
+// };
+
+// const mybtn = document.getElementById("Submit");
+
+// btn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   const email = document.getElementById(".email").email.value;
+//   const password = document.getElementById(".password").password.value;
+//   if (obj.email === "rohit121@gmail.com" && obj.password === "Rohit@123") {
+//     alert("login success");
+//   } else {
+//     alert("invalid credentials ");
+//   }
+// });
+
+function testByRohit()
+{
+  var uName = document.getElementById('username-field').value;
+  var pass = document.getElementById('password-field').value;
+
+  if (uName === 'rohit' && pass ==='rohit123' )
+  {
+    alert('Login Sucess');
+  }
+  else
+  {
+    alert("Invalid User Name / Password");
+  }
+  
+}
+
+        </script>
+</body>
+</html>
