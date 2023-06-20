@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+</head>
+<body>
+    <h1>My Phone Book</h1>
+    <form >
+        <input type="text" placeholder="Enter Name" id="name">
+        <input type="tel" placeholder="Enter Phone" id="phone" />
+        <button type="button" onclick="addContact()"> Add Contact </button>
+
+        <ul id="contacts">
+
+        </ul>
+        
+    </form>
+
+
+    <script>
+
+        var phoneBook = []
+
+        function renderContacts()
+        {
+            var storedContacts = localStorage.getItem('contacts') // fetch contacts
+            storedContacts = JSON.parse(storedContacts) // convert them into array
+            var contacts = 
+            storedContacts.forEach(item => {
+                var b = `<li> ${item.name}  ${item.phone} </li>`
+                document.getElementById("contacts").innerHTML = document.getElementById("contacts").innerHTML + b
+            })
+        }
+
+        function addContact(){
+          var name = document.getElementById("name").value
+          var phone = document.getElementById("phone").value
+          // Add the newly added name and phone number in array of contacts
+          phoneBook.push({name,phone})
+          // Store the new updated array in localstorage by converting it into a string
+          localStorage.setItem('contacts',JSON.stringify(phoneBook))
+          // Clear all the old contacts from UI before showing updated one
+          document.getElementById("contacts").innerHTML = ""
+          // call method to fetch all the contacts from local storage and show them in UI
+          renderContacts()
+        }
+        renderContacts()
+
+    </script>
+</body>
+</html> 
